@@ -1,0 +1,163 @@
+body {
+    margin: 0 auto;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1vmax;
+}
+
+header {
+    background-color: rgb(0, 0, 53);
+    display: flex;
+    justify-content: space-between;
+}
+
+header>#head-img>img {
+    width: 20vw;
+    align-items: center;
+}
+
+header>#head-img:hover {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+header>#head-opt {
+    display: flex;
+    align-items: center;
+    gap: 1vmax;
+    font-size: 1vmax;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#head-opt>p>a:hover {
+    color: yellow;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(RESUME-MATERIAL/giphy.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main>#main-img>img {
+    width: 30vw;
+    border-radius: 100%;
+}
+
+aside>div {
+    display: flex;
+    font-size: 2.3vmax;
+    font-weight: bolder;
+    justify-content: space-around;
+    align-items: center;
+}
+
+aside>div>#my-name {
+    background: -webkit-linear-gradient(rgb(255, 0, 0) 30%, rgb(22, 5, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+aside>div>#element {
+    background: -webkit-linear-gradient(rgb(0, 255, 42) 30%, rgb(22, 5, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section {
+    color: black;
+    background-color: rgb(255, 206, 147);
+    text-align: center;
+    display: flex;
+    overflow-x: auto;
+    gap: 3vmax;
+    font-size: 1vmax;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.outer {
+    width: 10vw;
+    height: 10vh;
+    border-radius: 100%;
+    background: conic-gradient(#0000ff 0%, rgb(255, 255, 255) 0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    width: 8vw;
+    height: 8vh;
+    color: #000;
+    border-radius: 100%;
+    font-size: 2vmax;
+    font-weight: 900;
+    font-family: cursive;
+    background-color: rgb(235, 255, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#article-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 2vmax;
+}
+
+#article-container>div {
+    display: inline-block;
+    margin: 1vmax;
+    border: .5vmax solid crimson;
+}
+
+#article-container>div>img {
+    width: 50vmax;
+    height: 25vmax;
+    margin-top: 2vmax;
+}
+
+#article-container>div>div>p {
+    color: rgb(255, 94, 0);
+    text-decoration: none;
+    font-size: 2vmax;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: grey;
+}
+
+footer div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    /* position: sticky; */
+}
+
+footer div img {
+    width: 3vmax;
+    height: 3vmax;
+    cursor: pointer;
+    margin-top: 3%;
+}
+
+footer div img:hover {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}

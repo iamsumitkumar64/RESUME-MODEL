@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY-RESUME</title>
+    <link rel="stylesheet" href="RESUME.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>MY RESUME</h1>
+            <marquee scrollamount="10" direction="left" behavior="alternate">THIS IS JUST A PROJECT BUT I ASSURE YOU I WRITE EVERY CONTENT
+                VERY
+                PRECISELY .
+            </marquee>
+        </div>
+    </header>
+    <section>
+        <nav>
+            <div onclick="profile()">
+                <img src="RESUME-MATERIAL/profile.png" alt="ERROR">
+                <p>PROFILE</p>
+            </div>
+            <div onclick="education()">
+                <img src="RESUME-MATERIAL/projects record.png" alt="ERROR">
+                <p>EDUCATION</p>
+            </div>
+            <div onclick="college()">
+                <img src="RESUME-MATERIAL/members.png" alt="ERROR">
+                <p>COLLEGE</p>
+            </div>
+            <div onclick="map()">
+                <img src="RESUME-MATERIAL/map_address.png" alt="ERROR">
+                <p>ADDRESS</p>
+            </div>
+            <div onclick="contact()">
+                <img src="RESUME-MATERIAL/contact.png" alt="ERROR">
+                <p>CONTACT</p>
+            </div>
+            <div onclick="project()">
+                <img src="RESUME-MATERIAL/project.png" alt="ERROR">
+                <p>PROJECTS</p>
+            </div>
+            <div onclick="resume()">
+                <img src="RESUME-MATERIAL/resume.png" alt="ERROR">
+                <p>RESUME</p>
+            </div>
+            <div onclick="log_out()">
+                <img src="RESUME-MATERIAL/log_out.png" alt="ERROR">
+                <p>LOG-OUT</p>
+            </div>
+        </nav>
+        <div id="show">
+            <h1>I AM <p>SUMIT KUMAR</p>
+                I AM
+                <span id="element"></span> BY PROFESSION.
+            </h1>
+        </div>
+    </section>
+    <!-- <article>
+    </article> -->
+    <footer>
+        <div>
+            <a href="https://leetcode.com/u/iamsumitkumar64/" target="_blank">
+                <img src="RESUME-MATERIAL/leetcode-svgrepo-com.png" alt="miss">
+            </a>
+            <a href="https://github.com/iamsumitkumar64" target="_blank">
+                <img src="RESUME-MATERIAL/github-142-svgrepo-com.png" alt="miss">
+            </a>
+            <a href="https://www.linkedin.com/in/sumit-kumar999/" target="_blank">
+                <img src="RESUME-MATERIAL/linkedin-sketched-logo-svgrepo-com.png" alt="miss">
+            </a>
+            <a href="mailto:iam.sumitkumar64@gmail.com">
+                <img src="RESUME-MATERIAL/email-1564-svgrepo-com.png" alt="miss">
+            </a>
+        </div>
+    </footer>
+</body>
+<script src="RESUME.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    let typed = new Typed('#element', {
+        strings: ['<i style="font-size: 2vmax;">PYTHON DEVELOPER</i>', '<i style="font-size: 2vmax;">FULL STACK DEVELOPER</i>', '<i style="font-size: 2vmax;">LEETCODE DSA SOLVER</i>'],
+        typeSpeed: 50,
+        loop: true,
+        showCursor: true,
+        cursorChar: '✓',
+        autoInsertCss: true,
+    });
+</script>
+
+</html>
