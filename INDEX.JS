@@ -14,12 +14,14 @@ var get = (x, elementId) => {
     }, 30);
   }
 }
-get(80, 1);
-get(60, 2);
-get(80, 3);
-get(80, 4);
-get(70, 5);
-get(90, 6);
+let eventdel = document.getElementById("section").addEventListener("mouseover", () => {
+  get(80, 1);
+  setTimeout(() => get(60, 2), 500);
+  setTimeout(() => get(80, 3), 1000);
+  setTimeout(() => get(80, 4), 1500);
+  setTimeout(() => get(70, 5), 2000);
+  setTimeout(() => get(90, 6), 2500);
+}, { once: true });
 let typed = new Typed('#element', {
   strings: ['<i>PYTHON DEVELOPER</i>', '<i>FRONTEND DEVELOPER</i>', '<i>BACKEND DEVELOPER</i>', '<i>LEETCODE SOLVER</i>'],
   typeSpeed: 50,

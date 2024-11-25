@@ -78,7 +78,7 @@ function map() {
         p.setAttribute("style", " color:yellow;font-size:1.5em; font-weight:900;font-family:sans-serif;");
         p.innerText = "V.P.O Mor-Majra District Karnal Tehsil Ballah Karnal 132046 Haryana India";
         iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111235.35875960253!2d76.88171822000912!3d29.396485427738956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390dda457afbe651%3A0x41d3f6feacaa74d4!2sPanipat%2C%20Haryana!5e0!3m2!1sen!2sin!4v1722006941851!5m2!1sen!2sin";
-        iframe.setAttribute("style", "width:85vw; height:85vh;");
+        iframe.setAttribute("style", "width:80vw; height:80vh;");
         iframe.allowFullscreen = "";
         div.appendChild(p);
         div.appendChild(iframe);
@@ -203,7 +203,7 @@ function contact() {
         showElement.innerHTML = "";
         let div = document.createElement("div");
         let form = document.createElement("form");
-        form.setAttribute("style", "display:flex; flex-direction:column; font-size:2vw;");
+        form.setAttribute("style", "display:flex; flex-direction:column; font-size:2vw; margin-top:20vmax");
         let emailLabel = document.createElement("label");
         emailLabel.innerText = "Email ID";
         let emailInput = document.createElement("input");
@@ -237,7 +237,6 @@ function contact() {
     }
 }
 function project() {
-
     let showElement = document.getElementById("show");
     if (showElement) {
         showElement.innerHTML = "";
@@ -245,46 +244,111 @@ function project() {
         let div1 = document.createElement("div");
         let div2 = document.createElement("div");
         let div3 = document.createElement("div");
+        let div4 = document.createElement("div");
+        let div5 = document.createElement("div");
+        let div6 = document.createElement("div");
+
         let img1 = document.createElement("img");
         let img2 = document.createElement("img");
         let img3 = document.createElement("img");
-        div.setAttribute("style", "display:flex; flex-direction:column; ");
+        let img4 = document.createElement("img");
+        let img5 = document.createElement("img");
+        let img6 = document.createElement("img");
+
+        div.setAttribute("style", "display:flex; flex-direction:column;");
+        div1.setAttribute("style", "margin-top:2vmax;");
+        div2.setAttribute("style", "margin-top:2vmax;");
+        div3.setAttribute("style", "margin-top:2vmax;");
+        div4.setAttribute("style", "margin-top:2vmax;");
+        div5.setAttribute("style", "margin-top:2vmax;");
+        div6.setAttribute("style", "margin-top:2vmax;");
+
         let project1Link = document.createElement("a");
-        project1Link.href = "/WEB DEV/PROJECT 2 RPS/GAME.html";
+        project1Link.href = "PROJECT 2 RPS/index.html";
         project1Link.target = "_blank";
         project1Link.innerText = "ROCK PAPER SCISSOR";
+
         let project2Link = document.createElement("a");
-        project2Link.href = "/WEB DEV/PROJECT 4 TO-DO/TO_DO.HTML";
+        project2Link.href = "PROJECT 4 TO-DO/index.html";
         project2Link.target = "_blank";
         project2Link.innerText = "TO-DO WEBSITE";
+
         let project3Link = document.createElement("a");
-        project3Link.href = "/WEB DEV/PROJECT 1 AMAZON/INDEX.html";
+        project3Link.href = "PROJECT 1 AMAZON/index.html";
         project3Link.target = "_blank";
         project3Link.innerText = "AMAZON-CLONE";
-        img1.setAttribute("style", "width:20vmax; height: auto; border:1vb solid white; margin-left:10%;border-radius:5vb; box-shadow:2vb 2vb 2vb grey;");
-        img2.setAttribute("style", "width:20vmax; height: auto; border:1vb solid white; margin-left:10%;border-radius:5vb; box-shadow:2vb 2vb 2vb grey;");
-        img3.setAttribute("style", "width:20vmax; height: auto; border:1vb solid white; margin-left:10%;border-radius:5vb; box-shadow:2vb 2vb 2vb grey;");
+
+        let project4Link = document.createElement("a");
+        project4Link.href = "PROJECT 5 MOVIE/index.html";
+        project4Link.target = "_blank";
+        project4Link.innerText = "MOVIE APP";
+
+        let project5Link = document.createElement("a");
+        project5Link.href = "PROJECT 7 DICTIONARY/index.html";
+        project5Link.target = "_blank";
+        project5Link.innerText = "DICTIONARY APP";
+
+        let project6Link = document.createElement("a");
+        project6Link.href = "PROJECT 6 ADMISSION/index.html";
+        project6Link.target = "_blank";
+        project6Link.innerText = "ADMISSION FORM";
+
+        img1.setAttribute("style", "width:30vmax; height: 20vmax; border:1vb solid white; margin-left:10%;border-radius:5vb; box-shadow:2vb 2vb 2vb grey;");
         img1.src = "RESUME-MATERIAL/Rock-Paper-Scissor.webp";
         img1.alt = "miss";
         img1.style.margin = "0 auto";
         img1.style.display = "block";
+
+        img2.setAttribute("style", "width:30vmax; height: 20vmax; border:1vb solid white; margin-left:10%;border-radius:5vb; box-shadow:2vb 2vb 2vb grey;");
         img2.src = "RESUME-MATERIAL/to-do.jpg";
         img2.alt = "miss";
         img2.style.margin = "0 auto";
         img2.style.display = "block";
+
+        img3.setAttribute("style", "width:30vmax; height: 20vmax; border:1vb solid white; margin-left:10%;border-radius:5vb; box-shadow:2vb 2vb 2vb grey;");
         img3.src = "RESUME-MATERIAL/amazon.webp";
         img3.alt = "miss";
         img3.style.margin = "0 auto";
         img3.style.display = "block";
+
+        img4.setAttribute("style", "width:30vmax; height: 20vmax; border:1vb solid white; margin-left:10%;border-radius:5vb; box-shadow:2vb 2vb 2vb grey;");
+        img4.src = "RESUME-MATERIAL/movieposter.jpg";
+        img4.alt = "miss";
+        img4.style.margin = "0 auto";
+        img4.style.display = "block";
+
+        img5.setAttribute("style", "width:30v max; height: 20vmax; border:1vb solid white; margin-left:10%;border-radius:5vb; box-shadow:2vb 2vb 2vb grey;");
+        img5.src = "RESUME-MATERIAL/dictionaryposter.jpg";
+        img5.alt = "miss";
+        img5.style.margin = "0 auto";
+        img5.style.display = "block";
+
+        img6.setAttribute("style", "width:30vmax; height: 20vmax; border:1vb solid white; margin-left:10%;border-radius:5vb; box-shadow:2vb 2vb 2vb grey;");
+        img6.src = "RESUME-MATERIAL/admissionposter.png";
+        img6.alt = "miss";
+        img6.style.margin = "0 auto";
+        img6.style.display = "block";
+
         div1.appendChild(img1);
         div1.appendChild(project1Link);
         div2.appendChild(img2);
         div2.appendChild(project2Link);
         div3.appendChild(img3);
         div3.appendChild(project3Link);
+        div4.appendChild(img4);
+        div4.appendChild(project4Link);
+        div5.appendChild(img5);
+        div5.appendChild(project5Link);
+        div6.appendChild(img6);
+        div6.appendChild(project6Link);
+
         div.appendChild(div1);
         div.appendChild(div2);
         div.appendChild(div3);
+        div.appendChild(div4);
+        div.appendChild(div5);
+        div.appendChild(div6);
+
         showElement.appendChild(div);
     } else {
         console.error("Element with id 'show' not found");
@@ -300,8 +364,8 @@ function resume() {
         let a1 = document.createElement("a");
         let a2 = document.createElement("a");
         div.setAttribute("style", "display:flex; flex-direction:column;");
-        img.setAttribute("style", "width:20vw; height: auto; border:1vb solid white; border-radius:5vb; box-shadow:2vb 2vb 2vb grey; margin-bottom:1vmax;");
-        img.src = "RESUME-MATERIAL/Resume_pages.jpg";
+        img.setAttribute("style", "width:40vmax; height: 70%; border:1vb solid white; border-radius:5vb; box-shadow:2vb 2vb 2vb grey; margin-bottom:1vmax;");
+        img.src = "RESUME-MATERIAL/My Resume.jpg";
         img.addEventListener("mouseout", function () {
             this.style.webkitFilter = "invert(0%)";
             this.style.filter = "invert(0%)";

@@ -28,17 +28,24 @@ section {
     display: flex;
 }
 
+nav>div {
+    display: flex;
+    margin: auto;
+    animation: comeIn 5s;
+    overflow: hidden;
+    /* Add this to hide the text initially */
+}
+
 nav {
-    Width: 16vmax;
-    height: 100%;
+    Width: 12vmax;
     background-color: #666666;
     cursor: grab;
 }
 
-nav div {
+nav>div {
     display: flex;
     margin: auto;
-    animation: comeIn 5s;
+    animation: comeIn 3s;
 }
 
 @keyframes comeIn {
@@ -64,30 +71,39 @@ nav div {
 }
 
 
-nav div img {
+nav>div>img {
     width: 40%;
-    /* height: 40%; */
     border-radius: 50%;
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-nav div img:hover {
+nav>div:hover img{
     -webkit-filter: invert(100%);
     filter: invert(100%);
 }
 
-nav div p {
+nav>div>p {
+    /* width: 0; */
     color: white;
     margin: auto;
+    border-top: .3vmax solid red;
+    border-left: .3vmax solid white;
+    border-bottom: .3vmax solid blue;
+    border-right: .3vmax solid white;
     font-weight: 900;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* font-size: 100%; */
+    transition: p[hidden] 5s;
+    max-width: 0;
 }
 
-nav div p:hover {
-    color: yellow;
+nav>div:hover p[hidden],
+nav>div:active p[hidden] {
+    display: block;
+    visibility: visible;
+    color: rgb(251, 255, 0);
+    max-width: 100%;
 }
 
 article {
@@ -106,7 +122,7 @@ footer {
     background-color: grey;
 }
 
-footer div {
+footer>div {
     width: 100%;
     height: auto;
     display: flex;
@@ -129,10 +145,12 @@ footer div img:hover {
 #show {
     width: 100%;
     height: 100vh;
+    /* min-height: 85vmax; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 900;
     overflow: scroll;
-    background-image: url(RESUME-MATERIAL/grey_background.webp);
+    background-color: #1d1919;
+    /* background-image: url(RESUME-MATERIAL/grey_background.webp); */
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -141,7 +159,7 @@ footer div img:hover {
 #show>h1>p,
 h1 {
     font-size: 2vmax;
-    background: -webkit-linear-gradient(rgb(255, 136, 0), white, rgb(0, 255, 0));
+    background: -webkit-linear-gradient(rgb(255, 243, 135) 5%, rgb(255, 121, 121) 85%, rgb(211, 37, 255) 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
